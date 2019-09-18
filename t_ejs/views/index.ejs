@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+      <header>
+            <% include partials/header %>
+      </header> 
+
+      <main>
+        
+            <p><%= tagline %></p>
+            <ul>
+                <% students.forEach(function(student) { %>
+                   <p style="font-size: 25px; color: red">student</p>
+                  <% include partials/student %>
+                  
+                <% }); %>
+            </ul>
+    
+      </main>
+
+      <footer>
+            <% include partials/footer %>
+      </footer>
+
+
+</body>
+</html>
